@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Terracota | Guía de estilo</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Sin Bootstrap: esta guía es HTML5 + CSS puro, tal como pide la consigna -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="portada">
+    <p class="eyebrow">Guía de estilo</p>
+    <h1>Casa Terracota</h1>
+    <p class="subtitulo">Cerámica artesanal hecha a mano en Mendoza</p>
+  </header>
+
+  <main>
+
+    <!-- ===== PALETA DE COLORES ===== -->
+    <section class="seccion">
+      <h2>Paleta de colores</h2>
+      <div class="paleta">
+        <div class="color-card" style="background-color:#B5502F;">
+          <span>Terracota</span><code>#B5502F</code>
+        </div>
+        <div class="color-card" style="background-color:#EFE6D8; color:#3A2E23;">
+          <span>Arcilla clara</span><code>#EFE6D8</code>
+        </div>
+        <div class="color-card" style="background-color:#6E7F5C;">
+          <span>Oliva</span><code>#6E7F5C</code>
+        </div>
+        <div class="color-card" style="background-color:#3A2E23;">
+          <span>Tierra</span><code>#3A2E23</code>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TIPOGRAFÍA ===== -->
+    <section class="seccion">
+      <h2>Tipografía</h2>
+      <p class="muestra-titulo">Aa — Fraunces (títulos)</p>
+      <p class="muestra-texto">Aa — Inter (texto de párrafo, cuerpo de la página)</p>
+    </section>
+
+    <!-- ===== BOTONES 3D ===== -->
+    <section class="seccion">
+      <h2>Botones</h2>
+      <div class="fila-botones">
+        <button class="boton-3d boton-terracota">Ver colección</button>
+        <button class="boton-3d boton-oliva">Reservar taller</button>
+      </div>
+    </section>
+
+    <!-- ===== ENLACES ANIMADOS ===== -->
+    <section class="seccion">
+      <h2>Enlaces</h2>
+      <p>
+        Conocé nuestro <a href="#" class="enlace-animado">próximo taller de torno</a>,
+        o mirá el <a href="#" class="enlace-animado">catálogo completo de piezas</a>.
+      </p>
+    </section>
+
+    <!-- ===== CAMPO DE FORMULARIO CON FOCO ===== -->
+    <section class="seccion">
+      <h2>Campos de formulario</h2>
+      <label for="email-muestra">Correo electrónico</label>
+      <input type="email" id="email-muestra" class="campo-foco" placeholder="tu@correo.com">
+      <p class="ayuda">Hacé clic en el campo para ver el borde de foco resaltado.</p>
+    </section>
+
+    <!-- ===== ACORDEÓN (con <details>/<summary>, HTML5 nativo, sin JS) ===== -->
+    <section class="seccion">
+      <h2>Preguntas frecuentes</h2>
+
+      <details class="acordeon-item" open>
+        <summary>¿Hacen envíos a todo el país?</summary>
+        <p>Sí, enviamos piezas embaladas especialmente a todo Argentina.</p>
+      </details>
+
+      <details class="acordeon-item">
+        <summary>¿Los talleres son para principiantes?</summary>
+        <p>Sí, no se necesita experiencia previa. Llevamos el material.</p>
+      </details>
+
+      <details class="acordeon-item">
+        <summary>¿Puedo encargar una pieza personalizada?</summary>
+        <p>Sí, contactanos contando la idea y coordinamos el diseño juntos.</p>
+      </details>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Casa Terracota</p>
+  </footer>
+
+</body>
+</html>

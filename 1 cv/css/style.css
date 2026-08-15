@@ -1,0 +1,124 @@
+/* =========================================================
+   CV — carátula del portafolio
+   ========================================================= */
+
+:root {
+  --tinta: #2c2c2c;
+  --gris-texto: #6b6b6b;
+  --acento: #3E6259;
+  --acento-2: #B5502F;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #eee8dd;
+  color: var(--tinta);
+}
+
+.cv-hoja {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.08);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  font-size: 1.1rem;
+  color: var(--acento);
+  margin-bottom: .9rem;
+}
+
+.contacto {
+  font-size: .9rem;
+  color: var(--gris-texto);
+}
+.contacto li::after {
+  content: "·";
+  margin-left: .6rem;
+  color: #ccc;
+}
+.contacto li:last-child::after {
+  content: "";
+}
+
+.foto-placeholder {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: #eee8dd;
+  color: var(--gris-texto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .8rem;
+  margin-left: auto;
+}
+
+.foto-perfil {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: auto;
+}
+
+.item-formacion {
+  margin-bottom: 1rem;
+}
+
+.fecha {
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--gris-texto);
+  margin: 0;
+}
+
+.titulo-item {
+  font-weight: 600;
+  margin: .1rem 0;
+}
+
+.lista-certs {
+  padding-left: 1.1rem;
+  margin-bottom: 0;
+}
+.lista-certs li {
+  margin-bottom: .4rem;
+}
+
+.nivel {
+  color: var(--gris-texto);
+  font-size: .9rem;
+}
+
+.chip {
+  background-color: #eef1ee;
+  color: var(--acento);
+  border-radius: 2rem;
+  padding: .3rem .9rem;
+  font-size: .82rem;
+  font-weight: 500;
+}
+
+.chip-oliva {
+  background-color: #eef1ee;
+  color: #4a5d43;
+}
+
+.chip-terracota {
+  background-color: #f7e9e2;
+  color: var(--acento-2);
+}
+
+@media print {
+  body { background: #fff; }
+  .cv-hoja { box-shadow: none; }
+}

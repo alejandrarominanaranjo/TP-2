@@ -1,0 +1,65 @@
+/* =========================================================
+   Refugio del Cóndor — formulario de reserva
+   Paleta: madera oscura + verde bosque + hueso
+   ========================================================= */
+
+:root {
+  --madera: #2b241d;
+  --verde-bosque: #4a5d43;
+  --hueso: #f4f1ea;
+  --acento: #c98a3a;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--hueso);
+  color: var(--madera);
+}
+
+.titulo {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--verde-bosque);
+}
+
+.eyebrow {
+  font-size: .8rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--acento);
+  font-weight: 600;
+}
+
+.tarjeta-form {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2.5rem rgba(43, 36, 29, .12);
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+/* Foco de los campos en el color de acento, no el azul por defecto de Bootstrap */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--acento);
+  box-shadow: 0 0 0 .2rem rgba(201, 138, 58, .25);
+}
+
+.btn-accent {
+  background-color: var(--verde-bosque);
+  border-color: var(--verde-bosque);
+  color: #fff;
+  font-weight: 600;
+}
+.btn-accent:hover {
+  background-color: #3c4b36;
+  border-color: #3c4b36;
+}
+
+.form-check-input:checked {
+  background-color: var(--verde-bosque);
+  border-color: var(--verde-bosque);
+}
